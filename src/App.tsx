@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="fullscreen center-content">
+        <h1>foowood</h1>
         <ChocolateBarsLineup/>
       </div>
     </div>

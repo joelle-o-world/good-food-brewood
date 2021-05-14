@@ -1,3 +1,8 @@
+$transitionDelay: 0.1s
+$transitionDuration: 0.5s
+$expandedWidth: 500px
+
+
 @mixin HideScrollbars
   // Hide scrollbar for Webkit
   &::-webkit-scrollbar 
@@ -5,7 +10,8 @@
   -ms-overflow-style: none // IE/Edge
   scrollbar-width: none // Firefox
 
-.ChocolateBarsLineup
+.Lineup
+  position: relative
   display: flex
   flex-direction: row
   align-items: center
@@ -15,15 +21,35 @@
   list-style: none
   @include HideScrollbars
   .LineupItem
+    position: relative
     text-align: center
-    transition: min-width .5s, background-color 1s
+    transition: min-width $transitionDuration $transitionDelay, background-color 1s
     min-width: 200px
     //background-color: white
-    &:hover
-      min-width: 500px
-      //background-color: #ccccff
-  
+    .LineupAnnotations
+      position: absolute
+      top: 0px
+      left: 0px
+      width: $expandedWidth
+      height: 100%
+      opacity: 0
+      transition: opacity .1s
+      .AnnotationLabel
+        background-color: white
+    .LineupTitle
+      opacity: 0
+      transition: opacity .1s .1s
     .ChocolateBarImg
       width: 200px
       max-height: 95vh
       object-fit: contain
+      
+    &:hover
+      min-width: $expandedWidth
+      //background-color: #ccccff
+  
+      .LineupTitle 
+        opacity: 1
+      .LineupAnnotations
+        opacity: 1
+        transition: opacity .3s .6s

@@ -17,77 +17,77 @@ const chocolateBarsInfo = [
   {
     img: ChocolateBar1,
     annotations: [
-      <Annotation y="25%" x="75%" pointToY="10%">Milk Chocolate</Annotation>,
-      <Annotation y="50%" pointToY="45%" pointToX="42%">Dolce de Leche</Annotation>,
-      <Annotation y="75%"  pointToY="75%" pointToX="35%">Dark Chocolate</Annotation>,
+      <Annotation y="10%">Milk Chocolate</Annotation>,
+      <Annotation y="45%" x="42%">Dolce de Leche</Annotation>,
+      <Annotation y="75%" x="35%">Dark Chocolate</Annotation>,
     ],
     title: "Red Campion",
   },
   {
     img: ChocolateBar2,
-    title: "Greater Stitchwort",
+    title: "Lesser Stitchwort",
     annotations: [
-      <Annotation y="25%" pointToY="20%" >Organic Raspberries</Annotation>,
-      <Annotation y="50%" x="85%" pointToX="65%" pointToY="35%">White Chocolate</Annotation>,
-      <Annotation y="75%" x="21%" pointToX="40%">Caramel Crumb</Annotation>,
+      <Annotation y="20%" >Organic Raspberries</Annotation>,
+      <Annotation x="65%" y="35%">White Chocolate</Annotation>,
+      <Annotation x="40%">Caramel Crumb</Annotation>,
     ],
   },
   {
     img: ChocolateBar3,
     title: "Greater Stitchwort",
     annotations: [
-      <Annotation y="25%" pointToY="20%" >Organic Raspberries</Annotation>,
-      <Annotation y="50%" pointToY="45%">Dolce de Leche Chocolate</Annotation>,
-      <Annotation x="85%" y="65%" pointToY="55%" pointToX="60%">Black Onion Seeds</Annotation>,
-      <Annotation x="21%" y="80%" pointToX="40%" pointToY="65%">Caramel Crumbs</Annotation>,
+      <Annotation y="20%" >Organic Raspberries</Annotation>,
+      <Annotation y="45%" x="45%">Dolce de Leche Chocolate</Annotation>,
+      <Annotation y="55%" x="60%">Black Onion Seeds</Annotation>,
+      <Annotation x="40%" y="65%">Caramel Crumbs</Annotation>,
     ],
   },
   {
     img: ChocolateBar5,
     title: "Periwinkle",
     annotations: [
-      <Annotation y="45%" pointToX="35%">Dark Chocolate & Sea Salt</Annotation>,
-      <Annotation x="80%" y="35%" pointToY="25%">Chilli Flakes</Annotation>
+      <Annotation x="35%">Dark Chocolate & Sea Salt</Annotation>,
+      <Annotation y="25%">Chilli Flakes</Annotation>
     ],
   },
   {
     img: ChocolateBar4,
-    title: "Wild Rose",
+    title: "White Rose",
     annotations: [
-      <Annotation>White Chocolate</Annotation>,
-      <Annotation>Caramel Crumbs</Annotation>,
-      <Annotation>Organic Raspberries</Annotation>,
+      <Annotation x="61%" y="53%">White Chocolate</Annotation>,
+      <Annotation y="22%" x="48%">Caramel Crumbs</Annotation>,
+      <Annotation x="47%" y="75%">Organic Raspberries</Annotation>,
     ],
   },
   
   {
     img: ChocolateBar6,
-    title: "Red Campion",
+    title: "White Campion",
     annotations: [
-      <Annotation>Dolce de Latte Chocolate</Annotation>,
-      <Annotation>Organic Raspberries</Annotation>,
-      <Annotation>Black Onion Seeds</Annotation>,
-      <Annotation>Maldon Sea Salt</Annotation>,
+      <Annotation x="60%" y="35%">Dolce de Latte Chocolate</Annotation>,
+      <Annotation x="60%" y="21%">Organic Raspberries</Annotation>,
+      <Annotation x="51%" y="74%">Sea Salt</Annotation>,
+      <Annotation x="40%" y="52%">Caramel Crumbs</Annotation>,
     ],
   },
   {
     img: ChocolateBar7,
     title: "Wild Rose",
     annotations: [
-      <Annotation>Milk Chocolate</Annotation>,
-      <Annotation>Caramel Crumbs</Annotation>,
-      <Annotation>Black Onion Seeds</Annotation>,
+      <Annotation x="37%" y="34%">Milk Chocolate</Annotation>,
+      <Annotation x="53%" y="54%">Caramel Crumbs</Annotation>,
+      <Annotation x="60%" y="21%">Black Onion Seeds</Annotation>,
     ],
   },
   {
     img: ChocolateBar8,
     title: "Red Campion",
     annotations: [
-      <Annotation>White Chocolate</Annotation>,
-      <Annotation>Dolce de Leche Chocolate</Annotation>,
-      <Annotation>Organic Raspberries</Annotation>,
-      <Annotation>Caramel Crumbs</Annotation>,
-      <Annotation>Black Onion Seeds</Annotation>,
+      <Annotation x="60%" y="30%">White Chocolate</Annotation>,
+      <Annotation x="55%" y="60%">Dolce de Leche Chocolate</Annotation>,
+      <Annotation x="49%" y="77%">Organic Raspberries</Annotation>,
+      <Annotation x="49%" y="48%">Caramel Crumbs</Annotation>,
+      <Annotation x="48%" y="20%">Black Onion Seeds</Annotation>,
     ],
   },
 ];

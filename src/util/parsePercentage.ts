@@ -1,6 +1,7 @@
-export function parsePercentage(str:any, total=1) {
+export function parsePercentage(str:any, total=1, otherwise:number|string=0) {
   if(str === undefined)
-    return undefined;
+    str = otherwise
+
   if(typeof str === 'number')
     return str;
   if(typeof str === 'string' && str.slice(-1) == '%') {

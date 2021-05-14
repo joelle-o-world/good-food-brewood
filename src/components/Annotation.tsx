@@ -5,27 +5,25 @@ import {SVGContext} from './SVGOverlay';
 export const Annotation:FunctionComponent<{
   x?: string|number;
   y?: string|number;
-  pointToX?: number|string;
-  pointToY?: number|string;
-}> = props => {
+}> = ({children, x, y}) => {
 
-  const {children} = props;
 
-  const {width, height} = useContext(SVGContext)
+  const svg = useContext(SVGContext)
 
   const labelWidth = 120
-  const labelHeight = 30
+  const labelHeight = 120
 
-  const x = parsePercentage(props.x || 0, width) || labelWidth/2;
-  const y = parsePercentage(props.y || 0, height) || 0;
-  const pointToX = parsePercentage(props.pointToX || '50%', width);
-  const pointToY = parsePercentage(props.pointToY || '50%', height);
+  const x2 = parsePercentage(x, svg.width, "50%");
+  const y2 = parsePercentage(y, svg.height, "50%");
+  const x1 = x2 < svg.width/2 ? .2 * svg.width : .8 * svg.width;
+  let diff = y2 - svg.height/2
 
+  const y1 = y2 - diff * 0.2
 
   return <g>
-    <line x1={x} x2={pointToX} y1={y} y2={pointToY} stroke="black" />
+    <line x1={x1} x2={x2} y1={y1} y2={y2} stroke="black" />
     
-    <foreignObject x={x-60} y={y-10} width="120px" height="120px">
+    <foreignObject x={x1-labelWidth/2} y={y1 - 10} width={labelWidth+'px'} height={labelHeight}>
       <div className="AnnotationLabel">{children}</div>
     </foreignObject>
   </g>
